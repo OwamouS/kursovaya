@@ -1,0 +1,98 @@
+.topnav {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    margin: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 30px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+html,body{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: white;
+    background-color: #282a55;
+    display: flex;
+    flex-direction: row;
+}
+body>div{
+    margin: 20px;
+}
+button,input{
+    font-family: 'Lora', serif;
+    background-color: #1c8027;
+    color: #c0dcfa;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: #2b83f3;
+    margin: 10px;
+    text-align: center;
+}
+#logout{
+    flex: 0.5;
+}
+#applicationForm{
+    text-align: center;
+    flex: 3;
+}
+#applicationUpdate{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#notificationsForm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#notificationsForm>div{
+    margin: 10px;
+}
+#messages{
+    text-align: center;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.app{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 80%;
+}
+.ids{
+    flex: 0.5;
+}
+.app>div{
+    flex: 1;
+    margin: 5px;
+}
+#messages>div{
+    margin: 10px;
+}

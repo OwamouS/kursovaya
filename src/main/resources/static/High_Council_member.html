@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/High_Council_member.css">
+</head>
+<body>
+    <title>High_Council</title>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="/logout">Sign out</a>
+        <a class="active" href="High_Council_member.html">Council</a>
+    </div>
+    <div id="applicationForm">
+        <h2>Applications</h2>
+        <button onclick="getPassengerApplicationsForHigh_Council()">Reload Applications</button>
+        <div id="applications"></div>
+    </div>
+    <div if="applicationUpdate">
+        <h2>update application</h2>
+        <div>
+            <input id = "id" type="text">id</input>
+        </div>
+        <div>
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="Rejected">Rejected</option>
+                <option value="Approved">Approved</option>
+            </select>
+        </div>
+        <div>
+            <input id = "result" type="text">result</input>
+        </div>
+        <button onclick="updatePassengerApplication()">update</button>
+    </div>
+    <div id="notificationsForm">
+        <h2>add notification</h2>
+        <div>
+            <input id = "notification" type="text">text</input>
+        </div>
+        <button onclick="addNotification()">add</button>
+        <h2>delete notifications</h2>
+        <button onclick="deleteNotifications()">delete all</button>
+    </div>
+    <div id="messageForm">
+        <h2>sent message</h2>
+        <div>
+            <input id = "recipient_login" type="text">recipient_login</input>
+        </div>
+        <div>
+             <textarea id  = "message" type="text"></textarea>
+            message
+        </div>
+        <button onclick="addMessage()">sent</button>
+    </div>
+</body>
+<script src="High_Council.js"></script>
+</html>

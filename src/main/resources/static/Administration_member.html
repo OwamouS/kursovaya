@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Administration</title>
+    <link rel="stylesheet" type="text/css" href="css/Administration_member.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="/logout">Sign out</a>
+        <a class="active" href="Administration_member.html">Administration</a>
+    </div>
+    <div id="applicationForm">
+        <h2>Applications</h2>
+        <button onclick="getPassengerApplicationsForAdministration()">Reload Applications</button>
+        <div id="applications"></div>
+    </div>
+    <div if="applicationUpdate">
+        <h2>update application</h2>
+        <div>
+            <input id = "id" type="text">id</input>
+        </div>
+        <div>
+                <select id="status" name="status">
+                    <option value="Rejected">Rejected</option>
+                    <option value="Need High_Council approval">Need High_Council approval</option>
+                    <option value="Approved">Approved</option>
+                </select>
+            <label for="status">Status:</label>
+        </div>
+        <div>
+            <input id = "result" type="text">result</input>
+        </div>
+        <button onclick="updatePassengerApplication()">update</button>
+    </div>
+    <div id = "notificationsForm">
+        <h2>Notifications</h2>
+    </div>
+    <div id = "messages">
+        <h2>Messages</h2>
+    </div>
+</body>
+<script src="Administration.js"></script>
+</html>
